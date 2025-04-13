@@ -1,0 +1,6 @@
+<!-- templates/registration/login.html -->
+<form method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}  <!-- This renders the form fields as paragraphs -->
+    <button type="submit">Login</button>
+</form>
